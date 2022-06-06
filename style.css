@@ -1,0 +1,82 @@
+:root{   /*AQUI É O SELETOR MAIS ELEVADO, VAI NA RAIZ*/
+	--primary-color: #ffccf2;  /*AQUI CRIAMOS VARIAVEIS QUE SÃO AS CORES*/
+	--secondary-color:  #99ffcc;
+	--tertiary-color:  Gainsboro;
+
+}
+
+body{
+	background: var(--primary-color);
+	font-size: 15px;
+	font-family: 'Play', sans-serif;
+
+}
+
+#container{
+	height: 525px;
+	width: 360px;
+	margin:100px auto;
+	background: #ffe6ff;
+	box-shadow: 0 0 10px 10px blueviolet;
+	border-radius: 20px;
+}
+
+#tituloCalculadora{
+	background: var(--secondary-color); /*AQUI CHAMAMOS A VARIÁVEL COM A COR DESEJADA*/
+	color: black;
+	padding: 20px;
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: normal;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px ;
+	text-align: center;
+	
+}
+
+.tipsForm{
+	padding: 20px;
+}
+
+.formInput{
+	background: white;
+	width: auto;
+	padding: 5px 10px;
+}
+
+.formInput:focus{
+	border: 2px solid black;
+
+}
+
+.formSelect{
+	width: auto;
+	padding: 5px;
+	font-size: 12px;
+}
+
+.formSubmit{
+	text-transform: uppercase;
+	font-weight: bold;
+	display:block;
+	margin: 30px auto;
+	background: var(--primary-color);
+	border-radius: 5px;
+	border-width: 1px;
+	box-shadow: 0 0 3px 3px blueviolet;
+	width: 200px;
+	font-size: 17px;
+	color: #660066;
+}
+
+.formSubmit:hover{
+	background: #990073;
+	color: white;
+}
+
+#totalTip{
+	font-size: 20px;
+	margin-top: 5px;
+	text-align: center;
+}
+

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+	<title>Calculadora de Gorjetas</title>
+</head>
+<body>
+	<div id="container">
+		<div>
+			<h1 id="tituloCalculadora">Calculadora de gorjetas</h1>	
+		</div>
+		<div>
+			<form class="tipsForm" id="tipsForm" >
+				<label for="bill">
+					<p>Quanto ficou a conta?</p>
+				</label>
+				<p>
+					R$<input type="number" placeholder="valor" name="bill" id="bill" class="formInput" required>
+				</p>
+				<label for="serviceQuality">
+					<p>Como foi seu serviço?</p>
+				</label>
+				<p>
+					<select name="serviceQuality" id="serviceQuality" class="formSelect" required>
+						<option disabled selected ></option>
+						<option value="0">0% - Péssimo</option>
+						<option value="0.05">5% - Ruim</option>
+						<option value="0.10">10% - Bom</option>
+						<option value="0.15">15% - Muito Bom</option>
+						<option value="0.20">20% - Exclente!</option>
+					</select>
+				</p>
+				<label for="people">
+					<p>Quantas pessoas vão dividir a conta?</p>
+				</label>
+				<p>
+					<input type="number" name="people" id="people" placeholder="n° de pessoas" class="formInput" required>
+				</p>
+				<button id="botaocal" type="submit" class="formSubmit">Calcular</button>				
+			</form>
+		</div>
+		<div id="totalTip">
+			Gorjeta Total:
+			R$<span id="tip">0.00</span>	
+			<span id="each">cada pessoa</span>
+		</div>
+
+	</div>
+	<script type="text/javascript" src="scripts.js"></script>
+</body>
+</html>
