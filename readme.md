@@ -7,7 +7,7 @@
 <h2>Descrição</h2>
 <p>Projeto proposto em um mini curso do Programador Viking, onde pude aprimorar os meus e adquirir mais conhecimentos</p>
 
-<h2>Funcionalidade</h2>
+<h2>Funcionalidades</h2>
 <ul>
 	<li>Adicionar o valor total da conta</li>
 	<li>Avaliar o atendimento</li>
